@@ -15,10 +15,10 @@ import java.util.List;
  * @author Julio
  */
 public class Time {
-    //Criando um mapa de jogadores
+ 
     private HashMap<String, Jogador> jogadores = new HashMap<>();
     
-    //Função que retorna o mapa
+ 
     public HashMap getJogadores()
     {
         return jogadores;
@@ -30,9 +30,9 @@ public class Time {
     }
     public List<Jogador> ordena(JogadorComparator comparacao)
     {
-        //Criando uma lista com os valores do mapa
+  
         List<Jogador> sortido = new ArrayList<>(jogadores.values());
-        //Ordenando a lista
+  
         Collections.sort(sortido, comparacao);
         return sortido;
     }

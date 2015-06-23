@@ -16,9 +16,7 @@ public class JogadorComparator implements Comparator<Jogador>{
     
     public JogadorComparator()
     {
-        comparacaoGeral = true;
-        comparacaoNumero = true;
-        comparacaoNome = true;
+      this(true,true,true);
     }
     
     public JogadorComparator(boolean comparacaoGeral, boolean comparacaoNumero, boolean comparacaoNome)
@@ -46,10 +44,10 @@ public class JogadorComparator implements Comparator<Jogador>{
         else
         {
             
-            //Verificando se os nomes são equivalentes
+      
             if(comparaNome(jogador1.nome, jogador2.nome) == 0)
             {
-                //Comparando pelo numero
+             
                 return comparaNumero(jogador1.numero, jogador2.numero);
             }
             return comparaNome(jogador1.nome, jogador2.nome);
@@ -57,15 +55,15 @@ public class JogadorComparator implements Comparator<Jogador>{
     }
     public int comparaNome(String n1, String n2)
     {
-        //Comparando o tamanho dos nomes
+      
         if(n1.length() < n2.length())
         {
-            //Comparando letra por letra
+          
             for(int i = 0; i <= n1.length(); i++)
             {
                 if(n1.charAt(i) < n2.charAt(i))
                 {
-                    //Verificando se é acendente
+                   
                     if(comparacaoNome)
                         return -1;
                     else
@@ -73,7 +71,7 @@ public class JogadorComparator implements Comparator<Jogador>{
                 }
                 if(n1.charAt(i) > n2.charAt(i))
                 {
-                    //Verificando se é acendente
+                 
                     if(comparacaoNome)
                         return 1;
                     else
@@ -83,12 +81,12 @@ public class JogadorComparator implements Comparator<Jogador>{
         }
         else
         {
-            //Comparando letra por letra
+  
             for(int i = 0; i < n2.length(); i++)
             {
                 if(n1.charAt(i) < n2.charAt(i))
                 {
-                    //Verificando se é acendente
+                
                     if(comparacaoNome)
                         return -1;
                     else
@@ -96,7 +94,7 @@ public class JogadorComparator implements Comparator<Jogador>{
                 }
                 if(n1.charAt(i) > n2.charAt(i))
                 {
-                    //Verificando se é acendente
+                  
                     if(comparacaoNome)
                         return 1;
                     else
@@ -110,7 +108,7 @@ public class JogadorComparator implements Comparator<Jogador>{
     
     public int comparaNumero(int n1, int n2)
     {
-        //Verificando se é crescente ou decrescente
+
         if(comparacaoNumero)
             return n1 - n2;
         else

@@ -124,9 +124,7 @@ public class Pratica71 {
             }
             valido = true;
         }
-        /*for(Jogador j: alemanha.ordena(new JogadorComparator(false, true, true))){
-            System.out.println(j);
-        }*/
+     
     }
 
 }
