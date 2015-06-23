@@ -9,10 +9,10 @@ import java.util.Comparator;
 
 /**
  *
- * @author lvale
+ * @author Julio
  */
 public class JogadorComparator implements Comparator<Jogador>{
-    private boolean comparacaoNumero, comparacaoNome, comparacaoGeral;
+    private final boolean comparacaoNumero, comparacaoNome, comparacaoGeral;
     
     public JogadorComparator()
     {

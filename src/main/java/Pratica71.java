@@ -15,21 +15,11 @@ import utfpr.ct.dainf.if62c.pratica.JogadorComparator;
 
 /**
  *
- * @author lvale
+ * @author Julio
  */
 public class Pratica71 {
     public static void main( String[] args ){
-        //Time alemanha;
-        //Set<String> posicoes;
-
-        //alemanha = new Time();
- 
-        /*alemanha.addJogador("Goleiro", new Jogador(28, "Manuel Neuer"));
-        alemanha.addJogador("Zagueiro", new Jogador(4, "Benedikt Höwedes"));
-        alemanha.addJogador("Atacante", new Jogador(25, "Thomas Müller"));
-        alemanha.addJogador("Bicho", new Jogador(25, "Luiz"));
-        */
-        //Criando uma lista
+      
         ArrayList<Jogador> lista = new ArrayList<>();
         
         Scanner scanner = new Scanner(System.in);
@@ -44,7 +34,7 @@ public class Pratica71 {
                 valido = false;
             } else {
                 System.out.println("Digite um número!");
-                Object lixo = scanner.next();
+                Object junk = scanner.next();
             }
         }
         int numero = 0;
@@ -63,7 +53,7 @@ public class Pratica71 {
             {
                 System.out.println("Digite um número!");
                 valido = false;
-                Object lixo = scanner.next();
+                Object junk = scanner.next();
                         
             }
            
@@ -100,7 +90,7 @@ public class Pratica71 {
             {
                 System.out.println("Digite um número!");
                 valido = false;
-                Object lixo = scanner.next();
+                Object junk = scanner.next();
                         
             }
             if(numero == 0)

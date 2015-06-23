@@ -6,14 +6,13 @@
 package utfpr.ct.dainf.if62c.pratica;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
 /**
  *
- * @author lvale
+ * @author Julio
  */
 public class Time {
     //Criando um mapa de jogadores
